@@ -1,24 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="page-container" class="fade page-sidebar-fixed page-header-fixed has-scroll show">
+    <vue-topprogress ref="topProgress"></vue-topprogress>
+    <Header />
+    <Sidebar />
+    <div id="content" class="content">
+      <div class="col-lg-12">
+        <transition name="fade">
+          <router-view></router-view>
+        </transition>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/Header.vue";
+import Sidebar from "./components/Sidebar.vue";
 
 export default {
-  name: 'app',
+  name: "page-container",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    Header,
+    Sidebar
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
