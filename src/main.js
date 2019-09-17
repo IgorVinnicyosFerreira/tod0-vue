@@ -22,10 +22,6 @@ Vue.use(BootstrapVue);
 import vueTopProgress from "vue-top-progress";
 Vue.use(vueTopProgress);
 
-// bootrstrap
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
-
 // arquivo layout css
 import "./assets/css/default/style.min.css";
 import "./assets/css/default/style-responsive.min.css";

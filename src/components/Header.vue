@@ -5,7 +5,7 @@
     </div>
     <ul class="navbar-nav navbar-right">
       <li>
-        <form class="navbar-form" v-on:submit="validateForm">
+        <form class="navbar-form" v-on:submit.prevent="validateForm">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="busca" />
             <button type="submit" class="btn btn-search">
