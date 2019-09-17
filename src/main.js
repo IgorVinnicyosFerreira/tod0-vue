@@ -56,7 +56,7 @@ import VisualizarTodo from "./pages/VisualizarTodo.vue";
 
 const routes = [
   { path: "/home", component: Home },
-  { path: "/novo-todo/:id", name: "novo-todo", component: NovoTodo },
+  { path: "/novo-todo/:id?", name: "novo-todo", component: NovoTodo },
   { path: "/todos-atrasados", component: TodosAtrasados },
   {
     path: "/visualizar-todo/:id",

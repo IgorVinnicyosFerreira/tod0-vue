@@ -11,19 +11,19 @@
         data-init="true"
       >
         <ul class="nav">
-          <li v-bind:class="[has-sub, closed, {active: tabActive === '/home'}]">
+          <li v-bind:class="['has-sub', 'closed', {active: tabActive === '/home'}]">
             <a href="#" v-on:click="goRoute('/home')">
               <font-awesome-icon class="f-s-14" icon="home" />
               <span>&ensp;Home</span>
             </a>
           </li>
-          <li v-bind:class="[has-sub, closed, {active: tabActive === '/novo-todo'}]">
+          <li v-bind:class="['has-sub', 'closed', {active: tabActive === '/novo-todo'}]">
             <a href="#" v-on:click="goRoute('/novo-todo')">
               <font-awesome-icon class="f-s-14" icon="plus-circle" />
               <span>&ensp;Novo todo</span>
             </a>
           </li>
-          <li v-bind:class="[has-sub, closed, {active: tabActive === '/todos-atrasados'}]">
+          <li v-bind:class="['has-sub', 'closed', {active: tabActive === '/todos-atrasados'}]">
             <a href="#" v-on:click="goRoute('/todos-atrasados')">
               <font-awesome-icon class="f-s-14" icon="clock" />
               <span>&ensp;Todo's atrasados</span>
